@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float no1,no2;
+	char ch;
+	do{
+		cout<<"\nEnter numbers and operation \n";
+		cin>>no1>>no2>>ch;	//read
+		if(no1==0 && no2==0)
+		 	break;
+		switch(ch)//switch
+		{
+			case '+': 
+					cout<<no1+no2;
+					break;
+			case '-':
+					cout<<no1-no2;
+					break;
+			case '*':
+					cout<<no1*no2;
+					break;		
+			case '/':
+					cout<<no1/no2;
+					break;		
+			default:
+					cout<<"\nOperator not supported.......";
+					break;	
+		}
+		
+	}while(1);
+}
